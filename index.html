@@ -1,46 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Grid landing page</title>
-</head>
-<body>
-  <!-- Nav -->
-  Bridge Collective
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Grid landing page</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <p class="nav-title">Bridge Collective</p>
+      <button class="menu-button">
+        <img src="./assets/images/icon-menu.svg" alt="Menu icon" />
+      </button>
+    </nav>
 
-  <!-- Hero -->
-  A classroom for every child.
+    <div class="grid">
+      <main class="hero">
+        <h1 class="hero-title">A classroom for every child.</h1>
+        <p class="hero-subtitle">
+          We fund the schools, train the teachers, and measure what works — so
+          every child we reach today becomes a graduate tomorrow.
+        </p>
+      </main>
 
-  We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+      <div class="section-grid">
+        <section class="section">
+          <div class="section-header">
+            <div class="icon-container">
+              <img src="./assets/images/icon-sparkle.svg" alt="Sparkle icon" />
+            </div>
 
-  <!-- Stats -->
-  2.4M
-  Students reached
-  Across 31 countries since 2011.
+            <h2 class="header-stats">2.4M</h2>
+          </div>
 
-  1,284
-  Schools partnered
-  In 14 countries, from Kenya to Guatemala.
+          <div class="section-content">
+            <h3 class="section-title">Student reached</h3>
+            <p class="section-subtitle">Across 31 countries since 2011.</p>
+          </div>
+        </section>
+      </div>
 
-  38K
-  Teachers trained
-  Equipped with modern tools and methodology.
+      <div class="section-grid">
+        <section class="section">
+          <div class="section-header">
+            <div class="icon-container">
+              <img src="./assets/images/icon-plus.svg" alt="Plus icon" />
+            </div>
 
-  3.1×
-  Graduation lift
-  Partner schools outperform national averages 3x.
+            <h2 class="header-stats">1,284</h2>
+          </div>
 
-  <!-- Footer -->
-  © 2026 Bridge Collective
-  Registered charity 12345678
+          <div class="section-content">
+            <h3 class="section-title">Schools partnered</h3>
+            <p class="section-subtitle">
+              In 14 countries, from Kenya to Guatemala.
+            </p>
+          </div>
+        </section>
+      </div>
 
-  <!-- Menu panel — hidden until the hamburger is activated -->
-  About
-  Our Work
-  Partners
-  Annual Report
-  Donate
-</body>
+      <div class="section-grid">
+        <section class="section">
+          <div class="section-header">
+            <div class="icon-container">
+              <img src="./assets/images/icon-arrow-right.svg" alt="Arrow right icon" />
+            </div>
+
+            <h2 class="header-stats">38K</h2>
+          </div>
+
+          <div class="section-content">
+            <h3 class="section-title">Teachers trained</h3>
+            <p class="section-subtitle">
+              Equipped with modern tools and methodology.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="section-grid">
+        <section class="section">
+          <div class="section-header">
+            <div class="icon-container">
+              <img src="./assets/images/icon-trending-up.svg" alt="Trending up icon" />
+            </div>
+
+            <h2 class="header-stats">
+              3.1<img src="./assets/images/icon-close.svg" alt="X icon" />
+            </h2>
+          </div>
+
+          <div class="section-content">
+            <h3 class="section-title">Graduation lift</h3>
+            <p class="section-subtitle">
+              Partner schools outperform national averages 3x.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-title">© 2026 Bridge Collective</p>
+      <p class="footer-subtitle">Registered charity number 12345678</p>
+    </footer>
+  </body>
 </html>
