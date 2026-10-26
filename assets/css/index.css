@@ -123,8 +123,9 @@ a:visited {
   text-underline-offset: 0.3rem;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:focus-within {
   text-decoration: underline;
+  outline: none;
 }
 
 .hero,
