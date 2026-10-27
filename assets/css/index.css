@@ -192,3 +192,65 @@ a:visited {
 .overflow-hidden {
   overflow: hidden;
 }
+
+@media (min-width: 64rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .overlay {
+    width: 100%;
+  }
+
+  .nav {
+    border-bottom: 1px solid var(--blue-400);
+  }
+
+  .nav-menu {
+    position: absolute;
+    z-index: 2;
+    height: calc(100% - 4.5rem);
+    width: 26rem;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blue-700);
+    align-items: flex-end;
+  }
+
+  .menu-item {
+    text-align: right;
+  }
+
+  .hero {
+    justify-content: center;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--blue-400);
+  }
+
+  .section {
+    border: none;
+    border-left: 1px solid var(--blue-400);
+    border-bottom: 1px solid var(--blue-400);
+    height: auto;
+  }
+
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
